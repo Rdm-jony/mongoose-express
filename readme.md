@@ -1,4 +1,3 @@
-
 # 📝 Mongoose Express CRUD API (TypeScript)
 
 A simple backend REST API built using **Node.js**, **Express**, **TypeScript**, and **Mongoose (MongoDB)**. This project demonstrates CRUD operations (Create, Read, Update, Delete) on a simple blog system.
