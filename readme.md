@@ -8,28 +8,28 @@ A simple backend REST API built using **Node.js**, **Express**, **TypeScript**, 
 <pre>
 
 src/
-├── controllers/
-│ └── node_controller.ts
 │
-├── models/ 
-│ └── node_model.ts
+├── Interfaces/
+│   ├── blog_interface.ts
+│   └── user_interface.ts
 │
-├── app.ts # Main Express app configuration and routes setup
-├── server.ts # Connects to MongoDB and starts the server
+├── controller/
+│   ├── node_controller.ts
+│   ├── user_controller.ts
+│   └── blog_controller.ts
+│
+├── model/
+│   ├── node_model.ts
+│   ├── user_model.ts
+│   └── blog_model.ts
+│
+├── app.ts
+
 
 <pre>
 
 ---
 
-## 🔗 Live Features
-
-- `POST /blog/create` → Create a new blog
-- `GET /blog/` → Read all blogs
-- `GET /blog/:id` → Read a single blog by ID
-- `PUT /blog/:id` → Update blog by ID
-- `DELETE /blog/:id` → Delete blog by ID
-
----
 
 ## 🧰 Technologies Used
 
@@ -41,6 +41,28 @@ src/
 - MVC pattern
 
 ---
+
+
+## 🔗 Live Features user
+
+| Method | Endpoint  | Description             |
+| ------ | --------- | ----------------------- |
+| POST   | `/create` | Create a new user       |
+| GET    | `/`       | Get all users           |
+| GET    | `/:id`    | Get a single user by ID |
+| PATCH  | `/:id`    | Update a user by ID     |
+| DELETE | `/:id`    | Delete a user by ID     |
+
+## 🔗 Live Features blog
+
+| Method | Endpoint  | Description             |
+| ------ | --------- | ----------------------- |
+| POST   | `/create` | Create a new blog       |
+| GET    | `/`       | Get all blogs           |
+| GET    | `/:id`    | Get a single blog by ID |
+| PATCH  | `/:id`    | Update a blog by ID     |
+| DELETE | `/:id`    | Delete a blog by ID     |
+
 
 ## 🚀 Getting Started
 
