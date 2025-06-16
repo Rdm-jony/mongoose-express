@@ -53,7 +53,7 @@ blogRoutes.delete("/:id", async (req: Request, res: Response) => {
     try {
         const id = req.params.id
         const deleteBlog = await Blog.findByIdAndDelete(id)
-        res.status(500).json({ success: true, message: "successfully deleted",deleteBlog })
+        res.status(500).json({ success: true, message: "successfully deleted", deleteBlog })
 
     } catch (error) {
         console.log(error)
